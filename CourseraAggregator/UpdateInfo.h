@@ -12,10 +12,10 @@
 
 // массив объектов Course
 // если nil, значит новых курсов нет
-@property (nonatomic) NSArray* courses;
+@property (nonatomic) NSArray* newCourses;
 
 // ключи - id курсов, значения - массив объектов Video
 // если nil, новых видео нет
-@property (nonatomic) NSDictionary* videos;
+@property (nonatomic) NSDictionary* newVideos;
 
 @end
