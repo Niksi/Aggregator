@@ -15,7 +15,7 @@
 @property (nonatomic) NSArray* courses;
 
 // ключи - id курсов, значения - массив объектов Video
-// если nil,новых видео нет
+// если nil, новых видео нет
 @property (nonatomic) NSDictionary* videos;
 
 @end
