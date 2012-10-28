@@ -23,6 +23,7 @@
 		1797192D162ED4B600E26357 /* Updater.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797192C162ED4B600E26357 /* Updater.m */; };
 		17971930162ED4D600E26357 /* UpdateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797192F162ED4D600E26357 /* UpdateInfo.m */; };
 		17971933162ED4F200E26357 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 17971932162ED4F200E26357 /* Video.m */; };
+		FA6572DA163D633F007F2E09 /* info_30.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6572D9163D633F007F2E09 /* info_30.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		1797192F162ED4D600E26357 /* UpdateInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateInfo.m; sourceTree = "<group>"; };
 		17971931162ED4F200E26357 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		17971932162ED4F200E26357 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		FA6572D9163D633F007F2E09 /* info_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_30.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 		17971908162ED3BD00E26357 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FA6572D9163D633F007F2E09 /* info_30.png */,
 				17971909162ED3BD00E26357 /* CourseraAggregator-Info.plist */,
 				1797190A162ED3BD00E26357 /* InfoPlist.strings */,
 				1797190D162ED3BD00E26357 /* main.m */,
@@ -197,6 +200,7 @@
 				17971916162ED3BD00E26357 /* Default@2x.png in Resources */,
 				17971918162ED3BD00E26357 /* Default-568h@2x.png in Resources */,
 				1797191B162ED3BD00E26357 /* MainStoryboard.storyboard in Resources */,
+				FA6572DA163D633F007F2E09 /* info_30.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +335,7 @@
 				17971923162ED3BD00E26357 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
