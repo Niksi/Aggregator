@@ -1,17 +1,64 @@
-//
-//  AggregatorAppDelegate.m
-//  CourseraAggregator
-//
-//  Created by Ernest Sadykov on 10/17/12.
-//  Copyright (c) 2012 Ernest Sadykov. All rights reserved.
-//
-
 #import "AggregatorAppDelegate.h"
+#import "Course.h"
+#import "CoursesViewController.h"
+#import "CategoriesViewController.h"
+
+@interface AggregatorAppDelegate()
+{
+    NSMutableArray *courses;
+    NSMutableSet *categoriesSet;
+}
+
+@end
 
 @implementation AggregatorAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    courses = [NSMutableArray arrayWithCapacity:5];
+    categoriesSet = [NSMutableSet setWithCapacity:5];
+    
+    Course *course1 = [Course new];
+    course1.name = @"Test1";
+    course1.category = @"Category1";
+    Course *course2 = [Course new];
+    course2.name = @"Test2";
+    course2.category = @"Category2";
+    Course *course3 = [Course new];
+    course3.name = @"Test3";
+    course3.category = @"Category3";
+    Course *course4 = [Course new];
+    course4.name = @"Test4";
+    course4.category = @"Category4";
+    Course *course5 = [Course new];
+    course5.name = @"Test5";
+    course5.category = @"Category5";
+    
+    [courses addObject:course1];
+    [courses addObject:course2];
+    [courses addObject:course3];
+    [courses addObject:course4];
+    [courses addObject:course5];
+    
+    [categoriesSet addObject:course1.category];
+    [categoriesSet addObject:course2.category];
+    [categoriesSet addObject:course3.category];
+    [categoriesSet addObject:course4.category];
+    [categoriesSet addObject:course5.category];
+    
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    
+    UINavigationController *navigationCourseController = [[tabBarController viewControllers] objectAtIndex:1];
+    CoursesViewController *coursesViewController = [[navigationCourseController viewControllers] objectAtIndex:0];
+    
+//    [[[tabBarController viewControllers] objectAtIndex:0] ]
+    
+    UINavigationController *navigationCategoryController = [[tabBarController viewControllers] objectAtIndex:2];
+    CategoriesViewController *categoryViewController = [[navigationCategoryController viewControllers] objectAtIndex:0];
+    
+    coursesViewController.courses = courses;
+    categoryViewController.categories = (NSMutableArray *)[categoriesSet allObjects];
     // Override point for customization after application launch.
     return YES;
 }
@@ -36,6 +83,17 @@
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+}
+
+-(void)applicationDidFinishLaunching:(UIApplication *)application
+{
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
+    NSArray *myViewControllers = [NSArray arrayWithObjects:[UIViewController new], [UIViewController new], nil];
+    
+    tabBarController.viewControllers = myViewControllers;
+    
+    [_window addSubview:tabBarController.view];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application

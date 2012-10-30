@@ -17,13 +17,17 @@
 		17971916162ED3BD00E26357 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17971915162ED3BD00E26357 /* Default@2x.png */; };
 		17971918162ED3BD00E26357 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 17971917162ED3BD00E26357 /* Default-568h@2x.png */; };
 		1797191B162ED3BD00E26357 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17971919162ED3BD00E26357 /* MainStoryboard.storyboard */; };
-		1797191E162ED3BD00E26357 /* AggregatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797191D162ED3BD00E26357 /* AggregatorViewController.m */; };
 		17971927162ED46800E26357 /* CourseList.m in Sources */ = {isa = PBXBuildFile; fileRef = 17971926162ED46800E26357 /* CourseList.m */; };
 		1797192A162ED49100E26357 /* Course.m in Sources */ = {isa = PBXBuildFile; fileRef = 17971929162ED49100E26357 /* Course.m */; };
 		1797192D162ED4B600E26357 /* Updater.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797192C162ED4B600E26357 /* Updater.m */; };
 		17971930162ED4D600E26357 /* UpdateInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1797192F162ED4D600E26357 /* UpdateInfo.m */; };
 		17971933162ED4F200E26357 /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 17971932162ED4F200E26357 /* Video.m */; };
+		FA2414F6163FC5C400758367 /* CategoriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2414F5163FC5C400758367 /* CategoriesViewController.m */; };
+		FA2414F9163FC87A00758367 /* CategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2414F8163FC87A00758367 /* CategoryCell.m */; };
+		FA2415061640123100758367 /* CourseDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2415051640123100758367 /* CourseDetailsViewController.m */; };
 		FA6572DA163D633F007F2E09 /* info_30.png in Resources */ = {isa = PBXBuildFile; fileRef = FA6572D9163D633F007F2E09 /* info_30.png */; };
+		FA8C2815163FB5680061A693 /* CoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8C2814163FB5680061A693 /* CoursesViewController.m */; };
+		FA8C2819163FB6A80061A693 /* CourseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FA8C2818163FB6A80061A693 /* CourseCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,8 +45,6 @@
 		17971915162ED3BD00E26357 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		17971917162ED3BD00E26357 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		1797191A162ED3BD00E26357 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		1797191C162ED3BD00E26357 /* AggregatorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AggregatorViewController.h; sourceTree = "<group>"; };
-		1797191D162ED3BD00E26357 /* AggregatorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AggregatorViewController.m; sourceTree = "<group>"; };
 		17971925162ED46800E26357 /* CourseList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseList.h; sourceTree = "<group>"; };
 		17971926162ED46800E26357 /* CourseList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseList.m; sourceTree = "<group>"; };
 		17971928162ED49100E26357 /* Course.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Course.h; sourceTree = "<group>"; };
@@ -53,7 +55,17 @@
 		1797192F162ED4D600E26357 /* UpdateInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateInfo.m; sourceTree = "<group>"; };
 		17971931162ED4F200E26357 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
 		17971932162ED4F200E26357 /* Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
+		FA2414F4163FC5C400758367 /* CategoriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoriesViewController.h; sourceTree = "<group>"; };
+		FA2414F5163FC5C400758367 /* CategoriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesViewController.m; sourceTree = "<group>"; };
+		FA2414F7163FC87A00758367 /* CategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCell.h; sourceTree = "<group>"; };
+		FA2414F8163FC87A00758367 /* CategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCell.m; sourceTree = "<group>"; };
+		FA2415041640123100758367 /* CourseDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseDetailsViewController.h; sourceTree = "<group>"; };
+		FA2415051640123100758367 /* CourseDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseDetailsViewController.m; sourceTree = "<group>"; };
 		FA6572D9163D633F007F2E09 /* info_30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_30.png; sourceTree = "<group>"; };
+		FA8C2813163FB5680061A693 /* CoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesViewController.h; sourceTree = "<group>"; };
+		FA8C2814163FB5680061A693 /* CoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesViewController.m; sourceTree = "<group>"; };
+		FA8C2817163FB6A80061A693 /* CourseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CourseCell.h; sourceTree = "<group>"; };
+		FA8C2818163FB6A80061A693 /* CourseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CourseCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +112,12 @@
 		17971907162ED3BD00E26357 /* CourseraAggregator */ = {
 			isa = PBXGroup;
 			children = (
+				FA8C2816163FB6860061A693 /* Cells */,
+				FA8C2806163F1DBB0061A693 /* Controllers */,
 				17971924162ED3FD00E26357 /* Aggregator */,
 				17971910162ED3BD00E26357 /* AggregatorAppDelegate.h */,
 				17971911162ED3BD00E26357 /* AggregatorAppDelegate.m */,
 				17971919162ED3BD00E26357 /* MainStoryboard.storyboard */,
-				1797191C162ED3BD00E26357 /* AggregatorViewController.h */,
-				1797191D162ED3BD00E26357 /* AggregatorViewController.m */,
 				17971908162ED3BD00E26357 /* Supporting Files */,
 			);
 			path = CourseraAggregator;
@@ -141,6 +153,30 @@
 				17971932162ED4F200E26357 /* Video.m */,
 			);
 			name = Aggregator;
+			sourceTree = "<group>";
+		};
+		FA8C2806163F1DBB0061A693 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA8C2813163FB5680061A693 /* CoursesViewController.h */,
+				FA8C2814163FB5680061A693 /* CoursesViewController.m */,
+				FA2414F4163FC5C400758367 /* CategoriesViewController.h */,
+				FA2414F5163FC5C400758367 /* CategoriesViewController.m */,
+				FA2415041640123100758367 /* CourseDetailsViewController.h */,
+				FA2415051640123100758367 /* CourseDetailsViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		FA8C2816163FB6860061A693 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA8C2817163FB6A80061A693 /* CourseCell.h */,
+				FA8C2818163FB6A80061A693 /* CourseCell.m */,
+				FA2414F7163FC87A00758367 /* CategoryCell.h */,
+				FA2414F8163FC87A00758367 /* CategoryCell.m */,
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,12 +249,16 @@
 			files = (
 				1797190E162ED3BD00E26357 /* main.m in Sources */,
 				17971912162ED3BD00E26357 /* AggregatorAppDelegate.m in Sources */,
-				1797191E162ED3BD00E26357 /* AggregatorViewController.m in Sources */,
 				17971927162ED46800E26357 /* CourseList.m in Sources */,
 				1797192A162ED49100E26357 /* Course.m in Sources */,
 				1797192D162ED4B600E26357 /* Updater.m in Sources */,
 				17971930162ED4D600E26357 /* UpdateInfo.m in Sources */,
 				17971933162ED4F200E26357 /* Video.m in Sources */,
+				FA8C2815163FB5680061A693 /* CoursesViewController.m in Sources */,
+				FA8C2819163FB6A80061A693 /* CourseCell.m in Sources */,
+				FA2414F6163FC5C400758367 /* CategoriesViewController.m in Sources */,
+				FA2414F9163FC87A00758367 /* CategoryCell.m in Sources */,
+				FA2415061640123100758367 /* CourseDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
